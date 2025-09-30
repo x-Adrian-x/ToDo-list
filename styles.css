@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(125, 114, 224);
+  background-color: rgb(83, 106, 128);
 }
 .container {
   display: grid;
@@ -31,7 +31,6 @@ body {
 }
 .task-container {
   grid-column: 1 / 2;
-  
   height: 95%;
   display: grid;
   grid-template-columns: 1fr;
@@ -40,24 +39,34 @@ body {
 }
 .create-container {
   border: 1px solid black;
-  height: 50%;
   width: 100%;
+}
+.task-form {
   display: flex;
   flex-direction: column;
 }
-.create-container label {
+.task-form input{
+  margin: 0 10px;
+}
+.task-form label {
   margin: 20px 6px 4px;
 }
-.create-container textarea {
+.task-form textarea {
   height: 80px;
   margin: 0 10px;
 }
-.create-container select {
+.task-form select {
   margin: 0 10px;
 }
-.create-container button {
+.task-form select:invalid {
+  color: gray;
+}
+.task-form option {
+  color: black;
+}
+.task-form button {
   width: 100px;
-  margin: auto;
+  margin: 40px auto;
 }
 .father-container {
   grid-column: 2 / 5;
